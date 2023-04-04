@@ -1,0 +1,35 @@
+/*
+Author: JPM
+*/
+/* =Reset
+-------------------------------------------------------------- */
+
+html {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+    background-color: grey;
+}
+body {
+	line-height: 1.5;
+    background-color: grey;
+}
+table.admin {
+    font-family: "Arial Black", Gadget, sans-serif;
+    border: 2px solid #000000;
+    background-color: #4A4A4A;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+  }
+  table.admin tr {
+    border: 1px solid #4A4A4A;
+    padding: 3px 2px;
+  }
+  table.admin tbody td {
+    font-size: 13px;
+    color: #E6E6E6;
+    }
