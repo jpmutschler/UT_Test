@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png">
-    <title>Sign In</title>
+    <title>Admin Sign In</title>
     <link rel="stylesheet" href="../admin_styles/new 3.css">
 
 <body>
@@ -13,7 +13,7 @@
         <img src="../images/logo.png" width="500px" />
     </div>
     <div class="X">
-        <br><a href="../admin_views/admin.html"><h5>Admin</h5></a>
+        <br><a href="../admin_views/admin.html"><h5>Admin SignIn</h5></a>
         <div class="container_signin">
             <form id="SignInForm" action="" class="was-validated" onsubmit="event.preventDefault(); signin();">
                 <h1>Sign In</h1>
@@ -29,9 +29,6 @@
                 <div class="form-field">
                     <input type="submit" class="btn" value="Login" onclick="javascript:validate();">
                 </div>
-                <div class="form-field">
-                    <p>No account? <input type="button" class="btn" value="Register" onclick="window.location.href='./register.html'">
-                </div>
             </form>    
         </div>
     </div>
@@ -41,7 +38,7 @@
             if(document.getElementById("username").value == "admin"
                && document.getElementById("pwd").value == "admin" )
             {
-                location.href="./admin.html";
+                location.href="../admin_views/admin.html";
             }
             else
             {
@@ -49,5 +46,5 @@
             }
         }
         </script>
-</body>
+</body>/
 </html>
