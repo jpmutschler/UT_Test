@@ -496,7 +496,7 @@ li{
 }
 
 .container_signin{
-  width : fit-content ;
+  width : 300px ;
   height : fit-content ;
   position: absolute;
   top: 50%;
