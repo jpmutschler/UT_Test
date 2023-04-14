@@ -21,18 +21,15 @@ function loadCategories(){
             i++;
         };
     var cat = document.getElementById("category")
-    
-    for (var c = 1; c <= catops.length; c++) {
-        var opt = catops[c];
-        var el = document.createElement("option");
-        el.textContent = opt;
-        el.value = opt;
+
+
+//    for (var c = 1; c <= catops.length; c++) {
+//        var opt = catops[c];
+//       var el = document.createElement("option");
+//        el.textContent = opt;
+//        el.value = opt;
         cat.appendChild(el);
     }
-
-        
-    
-}
 
 //To load all available cuisines in Add Food Page
 function loadCuisines(){
