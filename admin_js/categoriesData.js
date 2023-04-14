@@ -29,4 +29,4 @@ var categoryCollection = {
     },
 }
 
-module.export = { categoryCollection };
+export var categoryCollection;
