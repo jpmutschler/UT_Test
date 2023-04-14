@@ -1,13 +1,13 @@
 //To load all available categories in Add Food Page
 import { categoryCollection } from './categoriesData.js';
-i = 1;
-var arr1 = [];
-while (i >= 1) {
-    arr1.push(categoryCollection[i].name);
+//i = 1;
+//var arr1 = [];
+//while (i >= 1) {
+//    arr1.push(categoryCollection[i].name);
     //console.log(categoryCollection[i].name);
-    i++;
-}
-console.log(arr1);
+//    i++;
+//}
+//console.log(arr1);
 
 function loadCategories(){
     //Task 1.i
@@ -15,20 +15,17 @@ function loadCategories(){
     
     var catops = [];
         i = 1;
-        while (i >= 1 && i <= 5) {
+        while (i >= 1) {
             catops.push(categoryCollection[i].name);
             //console.log(i);
             i++;
         };
-    var cat = document.getElementById("category")
-
-
-//    for (var c = 1; c <= catops.length; c++) {
-//        var opt = catops[c];
-//       var el = document.createElement("option");
-//        el.textContent = opt;
-//        el.value = opt;
-        cat.appendChild(el);
+        for (var c = 0; c < catops.length; c++) {
+            var option = document.createElement("option");
+            option.value = catops[c];
+            option.textContent = catops[c];
+            document.getElementById("categories").appendChild(option);
+          }
     }
 
 //To load all available cuisines in Add Food Page
