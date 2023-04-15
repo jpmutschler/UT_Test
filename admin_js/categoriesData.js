@@ -29,4 +29,5 @@ var categoryCollection = {
     },
 }
 
-export var categoryCollection;
+//module.exports = { categoryCollection };
+//export default categoryCollection;
