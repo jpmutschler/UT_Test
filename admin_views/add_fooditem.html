@@ -7,6 +7,7 @@
         <link rel="stylesheet" type="text/css" href="../admin_styles/new 3.css">
         <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png">
         <script src="../admin_js/categoriesData.js"></script>
+        <script src="../admin_js/fooditemsData.js"></script>
         <script src="../admin_js/cuisinesData.js"></script>
         <script src="../admin_js/adminfooditems.js"></script>
         <title>Add FoodItem</title>
@@ -23,7 +24,9 @@
                 <div class="table-content">	
                     <div class="table-row">		
                         <div class="table-data2"><b>Food Item Name:    </b></div>
-                        <select class="form-select" name="fname" id="fname" onfocus="listFoodItems();"></select>
+                        <div class="table-data3">
+                            <select class="form-select" name="fname" id="fname" onfocus="listFoodItems();"></select>
+                        </div>
                     </div>
                     <div class="table-row">
                         <div class="table-data2"><b>Food Item Description:    </b></div>
