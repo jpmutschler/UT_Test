@@ -31,5 +31,12 @@ function loadCuisines() {
 //View All Food Items Info
 function listFoodItems() {
     //Task 1.ii
-    //Write the code here to display details of all food items available on the List Food Items webpage
+    Object.keys(foodItemsCollection)
+       .sort()
+       .forEach((opt) => {
+           var option3 = document.createElement('option');
+           option3.value = foodItemsCollection[opt].title;
+           option3.textContent = foodItemsCollection[opt].title;
+           document.getElementById('fname').appendChild(option3);
+       });
 }
