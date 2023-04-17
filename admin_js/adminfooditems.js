@@ -3,9 +3,7 @@
 function loadCategories() {
     //Task 1.i
     //Write the code here to display category names in the Category dropdown menu on Add FoodItem webpage
-    while (categoryCollection.options.length > 0) {
-        select.remove(0);
-        };
+
    Object.keys(categoryCollection)
        .sort()
        .forEach((opt) => {
