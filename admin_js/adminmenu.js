@@ -16,4 +16,14 @@ function loadRestaurants(){
     var foodItemsTable = document.getElementById("fooditems");
     //Task 2.i
     //Write the rest of the code to display the menu details offered by the selected restaurant in the List Food Menu web page
+	
+
+    $("#restaurant").change(function(){
+        $("#RestaurantMenu tbody tr").hide();
+        $("#RestaurantMenu tbody tr."+$(this).val()).show('fast');
+      });
+      
+      //this JS calls the tablesorter plugin that we already use on our site
+      $("#RestaurantMenu").tablesorter( {sortList: [[0,0]]} );
+
 }

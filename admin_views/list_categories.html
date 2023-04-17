@@ -1,63 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="stylesheet" type="text/css" href="../admin_styles/new 3.css">
-        <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
-        <title>All Cuisines</title>
-    </head>
-<body>
-    <form name="LS_Category" id="LS_Category">
-        <p><h1 class="Title">All Categories</h1></p><hr>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Categories</title>
+    <script src="../admin_js/categoriesData.js"></script>
+    <script src="../admin_js/admincategories.js"></script>
+    <link rel="stylesheet" href="../admin_styles/style.css">
+    <link rel="stylesheet" href="../admin_styles/productsstyle.css">
+</head>
+<body onload = "listCategories();">
+    <div class="header"></div>
+    <div class="main">
         <div class="container">
-	
-            <div class="table">
-                <div class="table-header">
-                    <div class="header__item"><a id="Data" class="filter__link filter__link--number">Category No</a></div>
-                    <div class="header__item"><a id="Data" class="filter__link filter__link--number">Category Name</a></div>
-                    <div class="header__item"><a id="Data" class="filter__link filter__link--number">Description</a></div>
-                    <div class="header__item"><a id="Data" class="filter__link filter__link--number">Active?</a></div>
-                    <div class="header__item"><a id="Data" class="filter__link filter__link--number">Image</a></div>
-                    <div class="header__item"><a id="Data" class="filter__link filter__link--number">Edit</a></div>
-                </div>
-                <div class="table-content">	
-                    <div class="table-row">		
-                        <div class="table-data">1</div>
-                        <div class="table-data">Pasta</div>
-                        <div class="table-data">All Types of Pasta</div>
-                        <div class="table-data"><input type="checkbox" id="Act" />Yes?</div>
-                        <div class="table-data"><img src="../images/1615916524567.jpeg" alt="Pizza1" width="100px" height="100px"/></div>
-                        <div class="table-data"><input type="button" class="button2" id="Edit1" value="Edit"/></div>
-                    </div>
-                    <div class="table-row">		
-                        <div class="table-data">2</div>
-                        <div class="table-data">German</div>
-                        <div class="table-data">All German Food</div>
-                        <div class="table-data"><input type="checkbox" id="Act2" />Yes?</div>
-                        <div class="table-data"><img src="../images/Traeger-Smoked-Kielbasa-Recipe-Sip-Bite-Go.jpg" alt="Kiel21" width="100px"/></div>
-                        <div class="table-data"><input type="button" class="button2" id="Edit2" value="Edit"/></div>
-                    </div>
-                    <div class="table-row">		
-                        <div class="table-data">3</div>
-                        <div class="table-data">Spanish</div>
-                        <div class="table-data">All Spanish Food</div>
-                        <div class="table-data"><input type="checkbox" id="Act3" />Yes?</div>
-                        <div class="table-data"><img src="../images/spanish-tapas-platter.jpg" alt="Kiel21" width="100px" height="100px"/></div>
-                        <div class="table-data"><input type="button" class="button2" id="Edit3" value="Edit"/></div>
-                    </div>
-                    <div class="table-row">		
-                        <div class="table-data">4</div>
-                        <div class="table-data">Sandwiches</div>
-                        <div class="table-data">All American Food</div>
-                        <div class="table-data"><input type="checkbox" id="Act4" />Yes?</div>
-                        <div class="table-data"><img src="../images/MaC.jpg" alt="Kiel21" width="100px"/></div>
-                        <div class="table-data"><input type="button" class="button2" id="Edit4" value="Edit"/></div>
-                    </div>
-                </div>  
-            </div>
-        </div>         
-    </form>
+            <form name="ViewAllCategories" action="" onsubmit="event.preventDefault();">
+                <h1>All Categories</h1>
+                <hr>
+                <table class="table table-hover">
+                    <thead>
+                    <tr>
+                        <th>Category No.</th>
+                        <th>Category Name</th>
+                        <th>Description</th>
+                        <th>Active?</th>
+                        <th>Image</th>
+                        <th>Edit</th>
+                    </tr>      
+                    </thead>              
+                    <tbody id="categoryTable"></tbody>
+                </table>        
+            </form>
+        </div>
+    </div>
+    <div class="footer"></div>
+    
 </body>
 </html>
