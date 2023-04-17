@@ -11,9 +11,7 @@ function loadCategories() {
            option.textContent = categoryCollection[opt].name;
            document.getElementById('category').appendChild(option);
        });
-       while (categoryCollection.options.length > 0) {
-        select.remove(0);
-        };   
+       
 }
 
 //To load all available cuisines in Add Food Page
