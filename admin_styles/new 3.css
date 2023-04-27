@@ -17,6 +17,14 @@ $color-form-highlight: #EEEEEE;
   --success-color: #28a745;
   --warning-color: #ffc107;
 
+  --header-height:6rem;
+	--mobile-menu-width:4rem;
+	
+	--purple-dark-2:hsl(270,0%,5%);
+	--purple-dark-1:hsl(270,20%,15%);
+	--purple:hsl(270,40%,50%);
+	--purple-light-1:hsl(270,40%,55%);
+
 }
 
 body{
@@ -161,10 +169,12 @@ li{
 	max-width: 1500px;
 	margin-right:auto;
 	margin-left:auto;
+  margin-top: auto;
 	display:flex;
 	justify-content:center;
 	align-items:center;
 	min-height:100vh;
+  
 }
 
 .table {
@@ -204,6 +214,7 @@ li{
   background:#FFFFFF;
   text-align:center;
   vertical-align:middle;
+  
 	&:nth-of-type(odd) {
 		background:$color-form-highlight;
 	}
@@ -775,4 +786,43 @@ li{
 
 .btn:focus {
   outline: none;
+}
+
+.scrolling-wrapper {
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
+  white-space: nowrap;
+  max-width: 10000px;
+  max-height: 200px;
+  
+  .inner {
+    width: 1000px;
+    padding:($half-spacing-unit * 1.5) 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+    &::-webkit-scrollbar {
+      display: none;}
+  }
+  
+  .row {
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display:flex;
+	  width:100%;
+    text-align:center;
+    vertical-align:middle;
+    &::-webkit-scrollbar {
+      display: none;}
+  }
+
+  .col {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 5%;
+
+    &::-webkit-scrollbar {
+      display: none;}
+  }
 }

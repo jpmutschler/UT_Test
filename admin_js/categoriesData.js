@@ -11,7 +11,7 @@ var categoryCollection = {
         "name": "Pizza",
         "description": "All types of pizza",
         "isActive": "Yes",
-        "image": "https:\\/\\/www.themealdb.com\\/images\\/media\\/meals\\/x0lk931587671540.jpg"
+        "image": "https://www.themealdb.com//images/media/meals/x0lk931587671540.jpg"
     },
     "3": {
         "id": 3,

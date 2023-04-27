@@ -6,6 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" type="text/css" href="../admin_styles/new 3.css">
         <link rel="icon" type="image/x-icon" href="./images/favicon-16x16.png">
+        <script src="../admin_js/adminrestaurants.js"></script>
         <title>Add Restaurant</title>
     </head>
     <body>
@@ -20,11 +21,11 @@
                 <div class="table-content">	
                     <div class="table-row">		
                         <div class="table-data2"><b>Restaurant Name:    </b></div>
-                        <div class="table-data3"><input type="text" id="finame" /></div>
+                        <div class="table-data3"><input type="text" id="name" /></div>
                     </div>
                     <div class="table-row">
                         <div class="table-data2"><b>Restaurant Address:    </b></div>
-                        <div class="table-data3"><textarea name="fiescrp" id="fiescrp" rows="5" cols="30"/></textarea></div>
+                        <div class="table-data3"><textarea id="desc" rows="5" cols="30"></textarea></div>
                     </div>
                     <div class="table-row">
                         <div class="table-data2"><b>Contact No:    </b></div>
@@ -34,18 +35,22 @@
                         <div class="table-data2"><b>Image URL:    </b></div>
                         <div class="table-data3"><input type="text" id="ImgURL" /></div><hr>
                     </div>
+                    <div class="table-row">
+                        <div class="table-data2"><b>Link:    </b></div>
+                        <div class="table-data3"><input type="text" id="link" /></div><hr>
+                    </div>
                     <div class="table-header">
                             <a href="#" class="button">
                                 <div class="button__line"></div>
                                 <div class="button__line"></div>
-                                <span class="button__text">Discard</span>
+                                <span class="button__text" onclick="window.history.back()">Discard</span>
                                 <div class="button__drow1"></div>
                                 <div class="button__drow2"></div>
                             </a>
                             <a href="#" class="button">
                                 <div class="button__line"></div>
                                 <div class="button__line"></div>
-                                <span class="button__text">submit</span>
+                                <span class="button__text" onclick="addRestaurant();">Submit</span>
                                 <div class="button__drow1"></div>
                                 <div class="button__drow2"></div>
                             </a>
