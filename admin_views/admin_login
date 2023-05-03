@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png">
+    <title>Admin Sign In</title>
+    <link rel="stylesheet" href="../admin_styles/new 3.css">
+
+<body>
+    <div>
+        <img src="../images/logo.png" width="500px" />
+    </div>
+    <div class="X">
+        <br><a href="../admin_views/admin.html"><h5>Admin SignIn</h5></a>
+        <div class="container_signin">
+            <form id="SignInForm" action="" class="was-validated" onsubmit="event.preventDefault(); signin();">
+                <h1>Sign In</h1>
+                <p id="signinValidity"></p>
+                <div class="form-field">
+                    <label class="form-label" for="username"><b>Username: </b></label></td>
+                    <input class="form-control" type="text" name="username" id="username" placeholder="Enter Username" required>
+                </div>
+                <div class="form-field">
+                    <label class="form-label" for="pwd"><b>Password: </b></label>
+                    <input class="form-control" type="password" placeholder="Enter Password" name="pwd" id="pwd" required>
+                </div>
+                <div class="form-field">
+                    <input type="submit" class="btn" value="Login" onclick="javascript:validate();">
+                </div>
+            </form>    
+        </div>
+    </div>
+    <script type="text/javascript">
+        function validate()
+        {
+            if(document.getElementById("username").value == "admin"
+               && document.getElementById("pwd").value == "admin" )
+            {
+                location.href="../admin_views/admin.html";
+            }
+            else
+            {
+                alert( "validation failed" );
+            }
+        }
+        </script>
+</body>/
+</html>

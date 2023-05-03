@@ -1,0 +1,67 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../images/favicon-16x16.png">
+    <title>iJosh Food Ordering</title>
+    <link rel="stylesheet" href="../admin_styles/new 3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""><link href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../user_styles/indexstyle.css">
+    <script src="../user_js/loadproducts.js"></script>
+</head>
+<body onload="loadProductContent()">
+    
+    <div>
+        <div>
+            <img src="../images/logo.png" width="500px" />
+        </div>
+        <div align="right">
+            <a href="">
+                <img src="../images/cart_icon2.png" height="50px" style="cursor:pointer;" title="Order History">
+                </a>
+                <a href="../index.html">
+                <img src="../images/login_icon2.png" height="50px" style="cursor:pointer;" title="Login">
+                </a>  
+                <a href="../admin_views/admin.html">
+                <img src="../images/icon-admin.png" height="50px" style="cursor:pointer;" title="Admin">
+                </a>
+        </div>        
+    </div><hr>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+        <div class="container">
+            
+            <form action="" name="addMenuForm" id="form1" style="padding-top: 5%;">
+                
+                
+                <img src="..\images\OnlineOrderpng.png" height="100px">
+                
+                <hr>
+                <div class="row p-1" id="wholemenu">
+                    <a href="./productdetail.html"><h5><center>See All Menu Options</center></h5></a>
+                </div>
+                <h5>Try new cuisine</h5>
+                <div class="scrolling-wrapper">
+                    <div class="inner" id="cuisine">
+                
+                    </div>
+                </div>
+                <br>
+                <h5>Get inspiration for your order</h5>
+                <div class="scrolling-wrapper">
+                    <div class="inner" id="category">
+                    
+                    </div>
+                </div>
+                <br>
+                <h5>Available Restautants</h5>
+                <div class="scrolling-wrapper">
+                    <div class="inner" id="restaurant">
+                                        
+                    </div>
+                    
+                </div>                
+            </form>
+        </div>
+    <div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Food Menu</title>
+    <script src="../admin_js/restaurantsData.js"></script>
+    <script src="../admin_js/fooditemsData.js"></script>
+    <script src="../admin_js/menuData.js"></script>
+    <script src="../admin_js/adminmenu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../admin_styles/new 3.css">
+    <link rel="stylesheet" href="../admin_styles/productsstyle.css">
+</head>
+<body>
+    <div>
+        <div>
+            <img src="../images/logo.png" width="500px" />
+        </div>
+        <div align="right">
+            <a href="">
+                <img src="../images/cart_icon2.png" height="50px" style="cursor:pointer;" title="Order History">
+                </a>
+                <a href="../index.html">
+                <img src="../images/login_icon2.png" height="50px" style="cursor:pointer;" title="Login">
+                </a>  
+                <a href="../admin_views/admin.html">
+                <img src="../images/icon-admin.png" height="50px" style="cursor:pointer;" title="Admin">
+                </a>
+        </div>        
+    </div><hr>
+    
+        
+        <div class="container">
+            <form name="ViewRestaurantMenu" id="RestaurantMenu" action="" onsubmit="event.preventDefault();">
+                <h1>Menu</h1>
+                <div class="row">
+                    <div class="col">
+                        <label for="restaurant">Select Restaurant</label>
+                        <select name="restaurant" id="restaurant" onfocus="loadRestaurants();" onchange="listMenu();"></select>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <table id="foodtable" class="table">
+                        <tbody id="fooditems">
+                            <div class="table-header">
+                                <div class="header__item"><a id="img" class="filter__link filter__link--number" href="#">Image</a></div>
+                                <div class="header__item"><a id="name" class="filter__link filter__link--number" href="#">Food Item Name</a></div>
+                                <div class="header__item"><a id="desc" class="filter__link filter__link--number" href="#">Price</a></div>
+                            </div>
+                            	
+                        </tbody>
+                    </table>
+                </div>
+            </form>
+        </div>
+    
+</body>
+</html>
